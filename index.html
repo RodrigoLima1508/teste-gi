@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação de Trabalho - Medicina Veterinária</title>
+    <title>Medicina Veterinária</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Medicina Veterinária: Título do Trabalho</h1>
         <p>Um estudo sobre [insira o tema aqui].</p>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
 
     <section id="sobre">
         <h2>Sobre o Trabalho</h2>
@@ -28,12 +37,24 @@
 
     <section id="contato">
         <h2>Contato</h2>
-        <p>Para mais informações, entre em contato:</p>
-        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+        <form action="https://formspree.io/f/seu-id" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 - Apresentação de Trabalho de Medicina Veterinária</p>
+        <p>&copy; 2023 - Apresentação de Trabalho de Medicina Veterinária</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
