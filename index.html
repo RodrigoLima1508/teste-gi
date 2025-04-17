@@ -26,6 +26,26 @@
     header p {
       font-size: 1.2rem;
     }
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     section {
       padding: 4rem 2rem;
       max-width: 1200px;
@@ -49,10 +69,11 @@
       overflow: hidden;
       width: 100%;
       max-width: 500px;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .projeto:hover {
       transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
     .projeto img {
       width: 100%;
@@ -78,6 +99,7 @@
       margin-bottom: 1rem;
       border: 1px solid #ccc;
       border-radius: 8px;
+      font-size: 1rem;
     }
     form button {
       padding: 1rem 2rem;
@@ -87,6 +109,7 @@
       border-radius: 8px;
       cursor: pointer;
       transition: background 0.3s;
+      font-size: 1rem;
     }
     form button:hover {
       background: #00439c;
@@ -111,20 +134,26 @@
       align-items: center;
       gap: 0.5rem;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 999;
     }
     @media(max-width: 768px) {
-      .projetos {
-        flex-direction: column;
-        align-items: center;
-      }
+      nav { flex-direction: column; align-items: flex-start; }
+      nav a { margin: 0.5rem 0 0 0; }
+      .projetos { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
 <body>
-  <header>
+  <nav>
+    <div><strong>Digao Tech</strong></div>
+    <div>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Orçamento</a>
+    </div>
+  </nav>  <header>
     <h1>Digao Tech</h1>
     <p>Criação de Sites Profissionais para sua empresa ou serviço</p>
-  </header>  <section>
+  </header>  <section id="projetos">
     <h2>Projetos Recentes</h2>
     <div class="projetos">
       <div class="projeto">
@@ -135,7 +164,7 @@
         </div>
       </div>
     </div>
-  </section>  <section>
+  </section>  <section id="contato">
     <h2>Solicitar Orçamento</h2>
     <div class="contato">
       <form action="https://formspree.io/f/{SEU_ID_AQUI}" method="POST">
