@@ -1,106 +1,111 @@
-html 
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bruna Carvalho - Venda de conteúdos.">
+    <meta name="description" content="Bruna Carvalho - Venda de conteúdos exclusivos.">
     <meta name="keywords" content="Vídeos personalizados, chamadas de vídeo ao vivo e pacotes promocionais">
-    <title>Bruna Carvalho</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bruna Carvalho - Conteúdos Exclusivos</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cabeçalho (modifique esta parte) -->
-<header id="header">
-    <div class="logo">
-        <!-- Espaço para logo -->
-    </div>
-    
-    <nav class="nav-menu">
-        <ul>
-            <li><a href="#hero" class="nav-link">Início</a></li>
-            <li><a href="#servicos" class="nav-link">Serviços</a></li>
-            <li><a href="#referencias" class="nav-link">Referências</a></li>
-            <li><a href="#contato" class="nav-link">Contato</a></li>
-        </ul>
-    </nav>
-</header>
-        
-        
-               
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="logo">
+            <!-- Você pode colocar uma pequena logo em texto ou imagem aqui -->
+             <a href="#hero">Bruna C.</a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#hero" class="nav-link">Início</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#previas" class="nav-link">Prévias</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Seção Hero -->
     <section id="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="logo-centralizada">
+                <!-- SUBSTITUA 'logocentro.png' PELA SUA LOGO/FOTO -->
                 <img src="logocentro.png" alt="Bruna Carvalho">
             </div>
             <h1>Bruna Carvalho</h1>
-            <p>Atendimento 24 horas via whatsapp.</p>
-            <a href="#servicos" class="btn">Conheça meus conteúdos</a>
-
+            <p>Conteúdos exclusivos feitos para você.</p>
+            <a href="#servicos" class="btn">Conheça meus serviços</a>
         </div>
     </section>
 
-   <!-- Seção Conteúdos -->
-<section id="conteúdos">
-    <h2>Meus Conteúdos</h2>
-    <div class="conteudos-container">
-        <!-- Serviço 1 -->
-        <div class="conteudo">
-            <i class="fas fa-spray-can" title="Pistola de Pintura"></i>
-            <h3>Chamadas de vídeo ao vivo via whatsapp</h3>
-            <p>Chamadas de vídeo ao vivo </p>
-        </div>
+   <!-- Seção Serviços (ID corrigido) -->
+    <section id="servicos">
+        <h2>Meus Serviços</h2>
+        <div class="servicos-container">
+            <!-- Serviço 1 -->
+            <div class="servico-item">
+                <i class="fas fa-video"></i>
+                <h3>Chamadas de vídeo</h3>
+                <p>Chamadas de vídeo ao vivo e interativas via WhatsApp.</p>
+            </div>
 
-        <!-- Conteudo 2 -->
-        <div class="conteudo">
-            <i class="fas fa-car"></i>
-            <h3>Vídeos personalizados</h3>
-            <p>Vídeos personalizados a sua escolha.</p>
-        </div>
+            <!-- Serviço 2 -->
+            <div class="servico-item">
+                <i class="fas fa-film"></i>
+                <h3>Vídeos personalizados</h3>
+                <p>Crio vídeos exclusivos com o tema que você escolher.</p>
+            </div>
 
-        <!-- Conteudo 3 -->
-        <div class="servico">
-            <i class="fas fa-tools"></i>
-            <h3>Pacotes promocionais</h3>
-            <p>Promoções especiais com descontos incriveis.</p>
-        </div>
+            <!-- Serviço 3 -->
+            <div class="servico-item">
+                <i class="fas fa-tags"></i>
+                <h3>Pacotes promocionais</h3>
+                <p>Combos especiais com descontos incríveis para você aproveitar mais.</p>
+            </div>
 
-        <!-- Serviço 4 Audios personalizados -->
-        <div class="servico">
-            <i class="fas fa-hammer" title="Martelinho de Ouro"></i>
-            <h3>Audios personalizados</h3>
-            <p>Audios personalizados de acordo com sua preferencia.</p>
-        </div>
+            <!-- Serviço 4 -->
+            <div class="servico-item">
+                <i class="fas fa-microphone-alt"></i>
+                <h3>Áudios personalizados</h3>
+                <p>Grave áudios únicos de acordo com a sua preferência e imaginação.</p>
+            </div>
 
-        <!-- Serviço 5 Namorada temporaria -->
-        <div class="servico">
-            <i class="fas fa-car-crash" style="color: #e74c3c;"></i>
-            <h3>Namorada temporaria</h3>
-            <p>Serei sua namoradinha virtual pelo tempo que quiser ( valores a combinar).</p>
+            <!-- Serviço 5 -->
+            <div class="servico-item">
+                <i class="fas fa-heart"></i>
+                <h3>Namorada Virtual</h3>
+                <p>Seja meu namorado virtual pelo tempo que quiser (valores a combinar).</p>
+            </div>
         </div>
-    </div> <!-- Fecha conteudos-container -->
-</section>
+    </section>
 
     <!-- Seção Prévias -->
     <section id="previas">
-        <h2>previas</h2>
+        <h2>Prévias</h2>
         <div class="carrossel-container">
             <div class="carrossel">
+                <!-- ATENÇÃO: Substitua as imagens e os textos -->
                 <div class="carrossel-item">
-                    <img src="foto1.jpg" alt="Pintura de um Golf - Antes e depois">
-                    <p>SUBSTITUIR IMG.</p>
+                    <img src="foto1.jpg" alt="Prévia 1">
                 </div>
                 <div class="carrossel-item">
-                    <img src="SUBSTITUIR IMG" alt="Resultado pintura Dodge Journey">
-                    <p>Resultado pintura Dodge Journey.</p>
+                    <img src="foto2.jpg" alt="Prévia 2">
                 </div>
                 <div class="carrossel-item">
-                    <img src="SUBSTITUIR IMG" alt="Antes e depois Astra">
-                    <p>Antes e depois Astra.</p>
+                    <img src="foto3.jpg" alt="Prévia 3">
                 </div>
+                <!-- Adicione mais itens se precisar -->
             </div>
             <button class="carrossel-btn anterior"><i class="fas fa-chevron-left"></i></button>
             <button class="carrossel-btn proximo"><i class="fas fa-chevron-right"></i></button>
@@ -109,17 +114,18 @@ html
 
     <!-- Seção Contato -->
     <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para mais informações ou combinar valores.</p>
+        <h2>Vamos conversar?</h2>
+        <p>Entre em contato para mais informações ou para adquirir meus conteúdos.</p>
 
         <div class="social-buttons">
-            <a href="https://wa.me/554788585466" target="_blank" class="social-button whatsapp-button">
+             <!-- ATENÇÃO: Substitua o número e os links -->
+            <a href="https://wa.me/55SEUNUMERO" target="_blank" class="social-button whatsapp-button">
                 <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
-            <a href="https://www.instagram.com/SUBSTITUIR URL INSTAGRAM" target="_blank" class="social-button instagram-button">
+            <a href="https://www.instagram.com/SEU_INSTAGRAM" target="_blank" class="social-button instagram-button">
                 <i class="fab fa-instagram"></i> Instagram
             </a>
-            <a href="https://www.tiktok.com/SUBSTITUIR URL TIKTOK" target="_blank" class="social-button tiktok-button">
+            <a href="https://www.tiktok.com/@SEU_TIKTOK" target="_blank" class="social-button tiktok-button">
                 <i class="fab fa-tiktok"></i> TikTok
             </a>
         </div>
@@ -130,12 +136,7 @@ html
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2025 Malibu Reparação Automotiva. Todos os direitos reservados.</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/flavio.malibu?igsh=MWdrNXZubmN3d2Vkcg=="><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/seufacebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.youtube.com/seuyoutube"><i class="fab fa-youtube"></i></a>
-        </div>
+        <p>© 2024 Bruna Carvalho. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
